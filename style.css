@@ -42,7 +42,7 @@ body{
   
   font-size: x-large;
   margin-top: 20px; /* Add a margin-top to create space between the button and other elements */
-  width: 150px;
+  width: 180px;
   height: 60px;
   background: linear-gradient(to right ,violet,rgb(118, 182, 246), #4c86f0);
   border-top-left-radius: 50% 100%;
@@ -55,12 +55,11 @@ body{
   align-items: center;
   position: relative; /* Add this line to establish a stacking context */
   z-index: 2; /* Increase the z-index value to ensure it appears on top */
-  transition: ;
 }
 .log1{
   font-size: x-large;
   margin-top: 20px; /* Add a margin-top to create space between the button and other elements */
-  width: 150px;
+  width: 180px;
   height: 60px;
   
   background: linear-gradient(to right ,violet,rgb(118, 182, 246), #4c86f0);
