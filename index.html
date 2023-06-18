@@ -3,11 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login page of codejunction</title>
+    <title >
+      
+      login page of codejunction
+
+    </title>
+    
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
 
+    <script src="script.js"></script>
     <div class="container">
       <h2 class="object">welcome to codejunction<br></h2>
 
@@ -22,21 +28,14 @@
       <img src="assets/9.png" class="object" data-value="-6" alt="">
       <img src="assets/10.png" class="object" data-value="-4" alt="">
       <img src="assets/11.png" class="object" data-value="-5" alt="">
+
+      <a href="login.html" class="fuckoffunderline">
+      <div class="log">
+        Login
+      </div>
+    </a>
+      
     </div>
-
-    <script type="text/javascript">
-    document.addEventListener("mousemove", parallax);
-    function parallax(e){
-      document.querySelectorAll(".object").forEach(function(move){
-
-        var moving_value = move.getAttribute("data-value");
-        var x = (e.clientX * moving_value) / 250;
-        var y = (e.clientY * moving_value) / 250;
-
-        move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
-      });
-    }
-    </script>
-
+          
   </body>
 </html>
