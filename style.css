@@ -41,9 +41,9 @@ body{
 .log{
   
   font-size: x-large;
-  margin-top: 20px; /* Add a margin-top to create space between the button and other elements */
-  width: 180px;
-  height: 60px;
+  margin-top: 5px; /* Add a margin-top to create space between the button and other elements */
+  width: 160px;
+  height: 70px;
   background: linear-gradient(to right ,violet,rgb(118, 182, 246), #4c86f0);
   border-top-left-radius: 50% 100%;
   border-top-right-radius: 50% 100%;
@@ -58,9 +58,10 @@ body{
 }
 .log1{
   font-size: x-large;
-  margin-top: 20px; /* Add a margin-top to create space between the button and other elements */
-  width: 180px;
-  height: 60px;
+  margin-top: 5px; /* Add a margin-top to create space between the button and other elements */
+  width: 160px;
+  height: 70px;
+  
   
   background: linear-gradient(to right ,violet,rgb(118, 182, 246), #4c86f0);
   border-top-left-radius: 50% 100%;
@@ -71,12 +72,12 @@ body{
   display: flex;
   justify-content: center;
   position: relative; /* Add this line to establish a stacking context */
-  margin-left: 100px;
+  margin-left: 30px;
   align-items: center;
 }
 .Beech{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   
 }
