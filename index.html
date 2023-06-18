@@ -3,40 +3,39 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login page of codejunction</title>
+    <title >
+      
+      login page of codejunction
+
+    </title>
+    
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
 
+    <script src="script.js"></script>
     <div class="container">
       <h2 class="object">welcome to codejunction<br></h2>
 
-      <img src="1.png" class="object" data-value="-5" alt="">
-      <img src="2.png" class="object" data-value="-6" alt="">
-      <img src="3.png" class="object" data-value="-4" alt="">
-      <img src="4.png" class="object" data-value="-4" alt="">
-      <img src="5.png" class="object" data-value="-5" alt="">
-      <img src="6.png" class="object" data-value="-6" alt="">
-      <img src="7.png" class="object" data-value="-4" alt="">
-      <img src="8.png" class="object" data-value="-5" alt="">
-      <img src="9.png" class="object" data-value="-6" alt="">
-      <img src="10.png" class="object" data-value="-4" alt="">
-      <img src="11.png" class="object" data-value="-5" alt="">
+      <img src="assets/1.png" class="object" data-value="-5" alt="">
+      <img src="assets/2.png" class="object" data-value="-6" alt="">
+      <img src="assets/3.png" class="object" data-value="-4" alt="">
+      <img src="assets/4.png" class="object" data-value="-4" alt="">
+      <img src="assets/5.png" class="object" data-value="-5" alt="">
+      <img src="assets/6.png" class="object" data-value="-6" alt="">
+      <img src="assets/7.png" class="object" data-value="-4" alt="">
+      <img src="assets/8.png" class="object" data-value="-5" alt="">
+      <img src="assets/9.png" class="object" data-value="-6" alt="">
+      <img src="assets/10.png" class="object" data-value="-4" alt="">
+      <img src="assets/11.png" class="object" data-value="-5" alt="">
+
+      <a href="login.html" class="fuckoffunderline">
+      <div class="log">
+        Login
+      </div>
+    </a>
+      
     </div>
-
-    <script type="text/javascript">
-    document.addEventListener("mousemove", parallax);
-    function parallax(e){
-      document.querySelectorAll(".object").forEach(function(move){
-
-        var moving_value = move.getAttribute("data-value");
-        var x = (e.clientX * moving_value) / 250;
-        var y = (e.clientY * moving_value) / 250;
-
-        move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
-      });
-    }
-    </script>
-
+          
   </body>
 </html>

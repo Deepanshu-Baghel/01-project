@@ -6,21 +6,20 @@
 
 body{
   font-family: "Segoe UI", sans-serif;
-  background: url(bg.png)no-repeat;
+  background: url(assets/bg.png)no-repeat;
   background-size: cover;
   height: 100vh;
 }
-
-.container{
+.container {
   position: relative;
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column; /* Add this line to stack elements vertically */
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
-
 .container img{
   position: absolute;
   width: 100%;
@@ -29,7 +28,6 @@ body{
   left: 0;
   object-fit: contain;
 }
-
 .container h2{
   z-index: 1;
   position: relative;
@@ -38,10 +36,29 @@ body{
   text-transform: uppercase;
   font-weight: 800;
   letter-spacing: 1px;
-  height: 200px;
-  
+  height: 100px;
 }
+.log{
+  margin-top: 20px; /* Add a margin-top to create space between the button and other elements */
+  width: 100px;
+  height: 50px;
+  background-color: violet;
+  border-radius: 20%;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Add this line to establish a stacking context */
+  z-index: 2; /* Increase the z-index value to ensure it appears on top */
 
+}
+.fuckoffunderline{
+  color: #fff;
+  text-decoration: none;
+}
+.log:hover {
+  cursor: pointer;
+}
 @media (max-width:500px){
   .container h2{
     font-size: 60px;
