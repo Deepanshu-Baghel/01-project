@@ -39,24 +39,56 @@ body{
   height: 100px;
 }
 .log{
+  
+  font-size: x-large;
   margin-top: 20px; /* Add a margin-top to create space between the button and other elements */
-  width: 100px;
-  height: 50px;
-  background-color: violet;
-  border-radius: 20%;
+  width: 150px;
+  height: 60px;
+  background: linear-gradient(to right ,violet,rgb(118, 182, 246), #4c86f0);
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+  border-bottom-left-radius: 50% 100%;
+  border-bottom-right-radius: 50% 100%;
   font-family: sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative; /* Add this line to establish a stacking context */
   z-index: 2; /* Increase the z-index value to ensure it appears on top */
-
+  transition: ;
+}
+.log1{
+  font-size: x-large;
+  margin-top: 20px; /* Add a margin-top to create space between the button and other elements */
+  width: 150px;
+  height: 60px;
+  
+  background: linear-gradient(to right ,violet,rgb(118, 182, 246), #4c86f0);
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+  border-bottom-left-radius: 50% 100%;
+  border-bottom-right-radius: 50% 100%;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  position: relative; /* Add this line to establish a stacking context */
+  margin-left: 100px;
+  align-items: center;
+}
+.Beech{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
 }
 .fuckoffunderline{
   color: #fff;
   text-decoration: none;
 }
 .log:hover {
+  cursor: pointer;
+}
+.log1:hover{
   cursor: pointer;
 }
 @media (max-width:500px){
