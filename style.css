@@ -39,7 +39,7 @@ body{
   height: 100px;
 }
 .log{
-  
+  font-weight: bolder;
   font-size: x-large;
   margin-top: 5px; /* Add a margin-top to create space between the button and other elements */
   width: 160px;
@@ -61,8 +61,7 @@ body{
   margin-top: 5px; /* Add a margin-top to create space between the button and other elements */
   width: 160px;
   height: 70px;
-  
-  
+  font-weight: bolder;
   background: linear-gradient(to right ,violet,rgb(118, 182, 246), #4c86f0);
   border-top-left-radius: 50% 100%;
   border-top-right-radius: 50% 100%;
