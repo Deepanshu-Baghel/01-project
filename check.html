@@ -1,0 +1,58 @@
+<?php
+session_start();
+
+// Check if the user is already logged in
+if (isset($_SESSION['username'])) {
+    header("Location: mainpage.php");
+    exit();
+}
+if (isset($_POST['submit'])) {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    $con = mysqli_connect("localhost", "root", "", "users"); // Replace "your_database_name" with the actual database name
+
+    if ($con) {
+        $query = "SELECT * FROM users WHERE username = '$username'";
+        $select = mysqli_query($con, $query);
+
+        if ($select) { // Check if query execution was successful
+            if (mysqli_num_rows($select) > 0) {
+                $row = mysqli_fetch_assoc($select);
+                $db_pass = $row['password'];
+                if ($password===$db_pass) {
+                    $_SESSION['username'] = $username;
+                    header("Location: mainpage.php");
+                    exit();
+                } else {
+                    echo "Invalid password";
+                }
+            } else {
+                echo "User does not exist";
+            }
+        } else {
+            echo "Query execution error: " . mysqli_error($con); // Display the error message for debugging purposes
+        }
+
+        mysqli_close($con); // Close the database connection
+    } else {
+        echo "Database connection error";
+    }
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <div class="just-a-div">
+        <form method="post" action="check.php">
+            <input type="text" name="username">
+            <input type="password" name="password">
+            <input type="submit" name="submit">
+        </form>
+    </div>
+</body>
+</html>
